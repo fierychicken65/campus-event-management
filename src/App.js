@@ -7,6 +7,7 @@ import HODRegister from "./components/LoginRegister/HODRegister";
 import RoomRegister from "./components/LoginRegister/RoomRegister";
 import StudentDash from "./components/Dashboard/studentDash";
 import HODDash from "./components/Dashboard/HODDash";
+import StudentInfo from "./components/Dashboard/studentsInfo";
 
 export default function App() {
   return (
@@ -14,11 +15,12 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="faculty-register" element={<FacultyRegister />} />
-        <Route path="hod-register"  element={<HODRegister/>}/>
-        <Route path="room-register" element={<RoomRegister/>}/>
+        <Route path="/faculty-register" element={<FacultyRegister />} />
+        <Route path="/hod-register"  element={<HODRegister/>}/>
+        <Route path="/room-register" element={<RoomRegister/>}/>
         <Route path = "/studentdash" element = {<StudentDash />} />
         <Route path="/hoddash" element={<HODDash />} />
+        <Route path="/studentinfo" element={<StudentInfo/>}/>
       </Routes>
     </BrowserRouter>
   );
